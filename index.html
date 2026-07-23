@@ -1,4 +1,41 @@
 <html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google-style Movie Tag</title>
+    <style>
+    /* Styling for the tag container */
+    .movie-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background-color: #f1f3f4;
+      border: 1px solid #dadce0;
+      border-radius: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: #3c4043;
+      line-height: 1.2;
+      width: fit-content;
+    }
+
+    /* Optional star styling for ratings */
+    .star-icon {
+      color: #f4b400;
+      font-size: 14px;
+    }
+
+    /* Dark mode support (matching Google Dark Theme) */
+    @media (prefers-color-scheme: dark) {
+      .movie-tag {
+        background-color: #303134;
+        border-color: #5f6368;
+        color: #e8eaed;
+      }
+    }
+    </style>
 </head>
 <body>
 
