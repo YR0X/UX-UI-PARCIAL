@@ -1,4 +1,12 @@
 /* Reset básico y fondo de la página */
+.vertical{
+  display:flex;
+  flex-direction:column;
+}
+.horizontal{
+  display:flex;
+  flex-direction:row;
+}
 body {
   background-color: #121214;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
