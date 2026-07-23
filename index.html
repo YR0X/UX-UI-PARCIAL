@@ -1,59 +1,44 @@
-<html>
-  <head>
-    <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Google-style Movie Tag</title>
-    <style>
-    /* Styling for the tag container */
-    .movie-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 4px 10px;
-      background-color: #f1f3f4;
-      border: 1px solid #dadce0;
-      border-radius: 16px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 500;
-      color: #3c4043;
-      line-height: 1.2;
-      width: fit-content;
-    }
-
-    /* Optional star styling for ratings */
-    .star-icon {
-      color: #f4b400;
-      font-size: 14px;
-    }
-
-    /* Dark mode support (matching Google Dark Theme) */
-    @media (prefers-color-scheme: dark) {
-      .movie-tag {
-        background-color: #303134;
-        border-color: #5f6368;
-        color: #e8eaed;
-      }
-    }
-    </style>
+  <title>Tarjeta de Película - Inception</title>
 </head>
 <body>
 
-  <!-- Example 1: Rating Tag -->
-  <div class="movie-tag">
-    <img src="InfernoPoster.jpg" alt="Movie Poster">
-    <span class="star-icon">★</span>
-    <span>8.8/10</span>
-  </div>
+  <!-- Tarjeta de Información de la Película -->
+  <div class="movie-card">
+    
+    <!-- Imagen del Póster -->
+    <div class="poster-container">
+      <img 
+        src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=600&q=80" 
+        alt="Póster de la Película" 
+        class="poster-image"
+      >
+    </div>
 
-  <!-- Example 2: Genre Tag -->
-  <div class="movie-tag">
-    <span>Sci-Fi / Action</span>
-  </div>
+    <!-- Título y Datos básicos -->
+    <h2 class="movie-title">Inception</h2>
+    <p class="movie-meta">2010 • CiFi / Acción • 2h 28m</p>
 
-  <!-- Example 3: Runtime / Year Tag -->
-  <div class="movie-tag">
-    <span>2010 • 2h 28m</span>
+    <!-- Etiquetas (Tags) de valoración y género -->
+    <div class="tag-container">
+      <div class="movie-tag">
+        <span class="star-icon">★</span>
+        <span>8.8 / 10</span>
+      </div>
+      <div class="movie-tag">
+        <span>Sci-Fi</span>
+      </div>
+    </div>
+
+    <!-- Sinopsis corta -->
+    <p class="movie-description">
+      Un ladrón que roba secretos corporativos a través del uso de la tecnología de intercambio de sueños recibe la tarea inversa de plantar una idea en la mente de un CEO.
+    </p>
+
   </div>
 
 </body>
